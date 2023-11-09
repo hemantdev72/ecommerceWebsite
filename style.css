@@ -1,0 +1,692 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#wrapper{
+    width: 100%;
+    background-color: #FBFAF9;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#header{
+    padding:15px 35px;
+    width: 100%;
+    height: 6.625rem;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+#left-part{
+    display: flex;
+}
+
+#left-part img{
+    height: 4.438rem;
+    width: 9.375rem;
+}
+
+#left-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left-menu a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 0 20px;
+    color:#333333;
+}
+
+#left-menu a:hover{
+    color:#8bc34a;
+}
+
+#right-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-menu{
+    list-style: none;
+    display: flex;
+}
+
+#right-menu a{
+    text-decoration: none;
+    color:#333333;
+    padding: 0 16px;
+    font-size: 1.125rem;
+}
+
+#right-menu a:hover{
+    color:#8bc34a;
+}
+
+#cart-items{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+#cart-items p:hover{
+    color:#8bc34a;
+}
+
+#cart-items i:hover{
+    color:#8bc34a;
+}
+
+#profile:hover{
+    color:#8bc34a;
+}
+
+#bars{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #8bc34a;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    display: none;
+}
+
+#bars i{
+    font-size: 1.25rem;
+    color:#fff;
+}
+
+#nav-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    height: 100vh;
+    width: 0vw;
+    transition: .2s ease-in;
+}
+
+#nav-bar p{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.563rem;
+}
+
+#mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* This aligns items to the top (default) */
+}
+
+#mobile-nav li {
+    list-style: none;
+    padding: 20px 20px;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    display: flex;
+    justify-content: space-between; /* This aligns items at each end */
+    align-items: center; /* This centers items vertically */
+}
+
+#mobile-nav li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#mobile-nav li:nth-child(1) {
+    border-bottom: 0;
+    justify-self: flex-end;
+}
+
+@media (max-width:860px){
+    #bars{
+        display: flex;
+    }
+
+    #right-menu{
+        display: none;
+
+    }
+    #left-part img {
+        height: 4rem;
+        width: 6rem;
+    }
+
+    #left-menu a {
+        font-size: .9rem;
+        padding:10px;
+    }
+
+    #right-menu a {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width:860px){
+    #nav-bar{
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    #left-part img {
+        height: 3rem;
+        width: 7.5rem;
+    }
+
+    #left-menu a {
+        font-size: 1rem;
+    }
+
+    #right-menu a {
+        font-size: 1rem;
+    }
+
+    #cart-items{
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+
+    #bars{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    /* #bars i{
+        font-size: 1rem;
+    } */
+}
+
+#section1{
+    height: 710px;
+    background-color: #F9F8F5;
+}
+
+#container{
+    padding: 5rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/leaves-free-img.png');
+    background-position:bottom right;
+    background-size:28% auto;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+
+#left-img{
+    height: 500px;
+}
+
+#section1 #right-part{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 70px;
+}
+
+#section1 #right-part h3{
+    font-size: 17px;
+    color:#111111;
+    margin:30px 0;
+    font-weight: 600;
+}
+
+#section1 #right-part h1{
+    font-size: 50px;
+    color:#111111;
+}
+
+#section1 #right-part p{
+    color:#333333;
+    font-size: 16px;
+    font-weight:500;
+    margin:30px 0;
+}
+
+#section1 #right-part img{
+    width: 75px;
+}
+
+#section1 #right-part button{
+    height: 50px;
+    width: 175px;
+    background-color:#6a9739;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+
+#right-part button a{
+    text-decoration: none;
+    color:#F9F8F5;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#section2{
+    height: 216px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 #banner{
+    height: 149px;
+    width: 305px;
+    background-color: #111111;
+}
+
+#section2 .inner-banner{
+    height: 129px;
+    width: 285px;
+    background-color: #303030;
+    margin:10px;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;   
+}
+
+#section2 .inner-banner i{
+    font-size:x-large;
+    color:#8bc34a;
+}
+
+#section2 .inner-banner h2{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#section2 .inner-banner h3{
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#sec3-container{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sec3-container h1{
+    font-size: 34px;
+    color:#111111;
+}
+
+#sec3-container #leaf{
+    width: 75px;
+    margin-top: 20px;
+}
+
+#sec3-items{
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+}
+
+.item img{
+    width: 285px;
+}
+
+.item p{
+    font-size: 13.5px;
+    color:#111111;
+    margin:5px 0;
+}
+
+.item #price{
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item h2{
+    font-size: 16px;
+}
+
+#section4{
+    background-color: #F8F6F3;
+    padding: 80px 0;
+    position: relative;
+}
+
+#section4 img{
+    position: absolute;
+    top:-50px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.sec4-item{
+    height: 365px;
+    width: 370px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    box-shadow: 0 0 10px 0 rgba(176,180,183,.17);
+    border-radius: 6px;
+}
+
+.sec4-item h2{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    /* color:#F8F6F3; */
+}
+
+.sec4-item h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin:15px 0;
+}
+
+.sec4-item button{
+    height: 48px;
+    width: 167px;
+    color:#fff;
+    background-color: #8bc34a;
+    font-size: 18px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#orange{
+    background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product11-free-img.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 80% auto;
+}
+
+#gobhi{
+    background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product13-free-img.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 80% auto;
+}
+
+#chana{
+    background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product17-free-img.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 80% auto;
+}
+
+#sec4-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+#section5{
+    height: 216px;
+    background-color: #111111;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 250px;
+
+}
+
+#section5 h1{
+    color:#fff;
+}
+
+#section5 button{
+    height: 48px;
+    width: 175px;
+    background-color: #8bc34a;
+    color:#fff;
+    font-size: 17px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#section6{
+    position: relative;
+}
+
+#section6::before{
+    content: '';
+    position: absolute;
+    background-color: #FEFDFC;
+    background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/logo-leaf2-free-img.png');
+    background-size: 37% auto;
+    background-position: top left;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index:1;
+}
+
+#sec6-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    z-index: 99;
+    padding: 100px 0;
+}
+
+#sec6-container .leaf{
+    margin-top: 20px;
+}
+
+#sec6-container #reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.review{
+    z-index: 99;
+    border-radius: 5px;
+    height: 352px;
+    width: 360px;
+    background-color: white;
+    box-shadow:0 0 10px 0 rgba(40,40,40,.38)
+}
+
+#deal{
+    height: 422px;
+    width: 380px;
+    background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/sydney-rae-668606-unsplash.jpg');
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px; 
+    position: relative;
+    box-shadow:0 0 10px 0 rgba(40,40,40,.38);
+    border-radius: 5px;      
+}
+
+#deal::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    opacity: .7;
+    z-index: 1;
+}
+
+#deal h1{
+    color:white;
+    width: 80%;
+    text-align: center;
+    z-index: 2;
+}
+
+#deal p{
+    z-index: 2;
+    color:#fff;
+    text-align: center;
+    width: 88%;
+}
+
+#deal button{
+    z-index: 2;
+    width: 167px;
+    height: 48px;
+    background-color: #8bc34a;
+    color:#fff;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+
+.review{
+    padding:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.review .review-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+#section7{
+    height: 157px;
+    width: 100%;
+    background-color: #F8F6F3;
+}
+
+#sec7-container{
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    /* background-color: red; */
+}
+
+#sec7-container h4{
+    font-size: 25px;
+
+}
+
+#product-section{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #F8F6F3;
+}
+
+#product-container{
+    padding:100px;
+}
+
+#item-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pagination{
+    margin:0 auto;
+    /* background-color: #8bc34a; */
+    text-align: center;
+}
+
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background-color: #8bc34a;
+    outline: none;
+    border-radius: 5px;
+    color:#fff;
+    border:none;
+    font-size: 20px;
+}
+
+#product-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:0 auto;
+}
+
+#groceries-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:0 auto;
+}
+
+#groceries-pagination{
+    margin:0 auto;
+    /* background-color: #8bc34a; */
+    text-align: center;
+}
+
+#juice-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:0 auto;
+}
+
+#juice-pagination{
+    margin:0 auto;
+    /* background-color: #8bc34a; */
+    text-align: center;
+}
